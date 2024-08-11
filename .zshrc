@@ -28,6 +28,7 @@ alias pa="pnpm add"
 alias pd="pnpm dev"
 alias pb="pnpm build"
 alias pr="pnpm run"
+alias psd="pnpm start:dev"
 
 # ----------------------
 # Git Aliases
