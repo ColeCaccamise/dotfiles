@@ -1,0 +1,6 @@
+theme = vesper
+keybind = global:cmd+alt+enter=toggle_quick_terminal
+macos-icon = "custom-style"
+macos-icon-frame = "plastic"
+macos-icon-ghost-color = "#FDFDFD"
+macos-icon-screen-color = "#0F0F0F"
