@@ -1,11 +1,14 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME=""
+
+autoload -U promptinit; promptinit
+prompt pure
 
 CASE_SENSITIVE="true"
 # ENABLE_CORRECTION="true"
 
-plugins=(git)
+plugins=(git docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,6 +22,8 @@ alias ll="ls -al" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias ghost="gs" # replace ghostscript command so git status works properly
 alias lint="npx next lint"
+alias ng="ngrok http --url=caccamedia.ngrok.dev"
+alias c="clear"
 
 # -------
 # pnpm Aliases
@@ -43,3 +48,20 @@ alias gpsh='git push'
 alias gpsho='git push -u origin'
 alias gss='git status -s'
 alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+
+# ----------------------
+# Docker Aliases
+# ----------------------
+alias d='docker'
+alias dps='docker ps'
+alias dc='docker compose'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dcud='docker compose up -d'
+
+# ----------------------
+# Rails Aliases
+# ----------------------
+alias rc='rails c'
+alias rdm='rake db:migrate'
+alias rdb='rake db:rollback'
