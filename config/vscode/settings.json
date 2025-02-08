@@ -1,0 +1,89 @@
+{
+	"window.commandCenter": 1,
+	"workbench.iconTheme": "glyph.legacy",
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"window.titleBarStyle": "custom",
+	"glassit.alpha": 0,
+	"workbench.colorCustomizations": {
+		"terminal.background": "#00000000"
+	},
+	"workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+	"vscode_vibrancy.preferedDarkTheme": "Catppuccin Mocha",
+	"vscode_vibrancy.opacity": -1,
+	"editor.fontSize": 13,
+	"prettier.jsxSingleQuote": true,
+	"prettier.proseWrap": "always",
+	"prettier.singleAttributePerLine": true,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "none",
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"files.associations": {
+		".env*": "dotenv",
+		"cglicenses.json": "jsonc",
+		"*.tst": "typescript",
+		"*.inc": "cpp",
+		"typeindex": "cpp",
+		"typeinfo": "cpp",
+		"functional": "cpp",
+		"array": "cpp",
+		"*.tcc": "cpp",
+		"memory": "cpp",
+		"future": "cpp",
+		"istream": "cpp",
+		"tuple": "cpp",
+		"utility": "cpp",
+		"variant": "cpp",
+		"compare": "cpp",
+		"thread": "cpp",
+		"string": "cpp",
+		"string_view": "cpp",
+		"span": "cpp",
+		"vector": "cpp",
+		"charconv": "cpp",
+		"chrono": "cpp",
+		"optional": "cpp",
+		"format": "cpp",
+		"ratio": "cpp",
+		"system_error": "cpp",
+		"regex": "cpp",
+		"type_traits": "cpp"
+	},
+	"editor.tokenColorCustomizations": {
+		"textMateRules": []
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"dotenv.enableAutocloaking": false,
+	"go.toolsManagement.autoUpdate": true,
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"html.completion.attributeDefaultValue": "singlequotes",
+	"[go]": {
+		"editor.insertSpaces": false,
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		}
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"workbench.colorTheme": "poimandres",
+	"explorer.confirmDelete": false,
+	"workbench.sideBar.location": "right",
+	"editor.largeFileOptimizations": false,
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"breadcrumbs.enabled": false,
+	"cursor.cpp.enablePartialAccepts": true,
+	"files.autoSave": "onFocusChange",
+	"makefile.configureOnOpen": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"explorer.confirmDragAndDrop": false,
+	"cursor.aipreview.enabled": true,
+	"cursor.general.enableShadowWorkspace": true
+}
