@@ -66,3 +66,15 @@ alias dcud='docker compose up -d'
 alias rc='rails c'
 alias rdm='rake db:migrate'
 alias rdb='rake db:rollback'
+
+# ----------------------
+# Vercel Aliases
+# ----------------------
+alias v='vercel'
+alias vb='vercel build'
+alias vd='vercel deploy'
+alias vls='vercel ls'
+alias vpr='vercel pull --environment=production'
+alias vps='vercel pull --environment=preview'
+alias vpsh='vercel push --environment=preview'
+alias vpsh='vercel push --environment=production'
