@@ -66,6 +66,7 @@ alias dcud='docker compose up -d'
 alias rc='rails c'
 alias rdm='rake db:migrate'
 alias rdb='rake db:rollback'
+alias bi='bundle install'
 
 # ----------------------
 # Vercel Aliases
