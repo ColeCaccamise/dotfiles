@@ -67,6 +67,7 @@ alias rc='rails c'
 alias rdm='rake db:migrate'
 alias rdb='rake db:rollback'
 alias bi='bundle install'
+alias rrg='rake routes | grep'
 
 # ----------------------
 # Vercel Aliases
@@ -79,3 +80,8 @@ alias vpr='vercel pull --environment=production'
 alias vps='vercel pull --environment=preview'
 alias vpsh='vercel push --environment=preview'
 alias vpsh='vercel push --environment=production'
+
+# ----------------------
+# Neovim Aliases
+# ----------------------
+alias vim='nvim'
