@@ -85,3 +85,4 @@ alias vpsh='vercel push --environment=production'
 # Neovim Aliases
 # ----------------------
 alias vim='nvim'
+alias nv='nvim'
