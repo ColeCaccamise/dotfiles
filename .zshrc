@@ -18,8 +18,8 @@ export TERM=xterm-256color
 # -------
 # Aliases
 # -------
-alias l="ls" # List files in current directory
-alias ll="ls -al" # List all files in current directory in long list format
+#alias l="ls" # List files in current directory
+#alias ll="ls -al" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias ghost="gs" # replace ghostscript command so git status works properly
 alias lint="npx next lint"
@@ -86,3 +86,20 @@ alias vpsh='vercel push --environment=production'
 # ----------------------
 alias vim='nvim'
 alias nv='nvim'
+
+# ----------------------
+# Eza Aliases
+# ----------------------
+alias ls='eza --git --group-directories-first --icons'
+alias l='eza --git --group-directories-first --icons'
+alias ll='eza --git --group-directories-first --icons -alF'
+alias la='eza --git --group-directories-first --icons -a'
+alias lt='eza --git --group-directories-first --icons -T'
+alias ltl='eza --git --group-directories-first --icons -TL'
+
+# ----------------------
+# Stripe Aliases
+# ----------------------
+alias sl='stripe login'
+alias slf='stripe listen --forward-to'
+
