@@ -26,6 +26,8 @@ alias lint="npx next lint"
 alias ng="ngrok http --url=caccamedia.ngrok.dev"
 alias c="clear"
 alias lg="lazygit" 
+alias sz="source ~/.zshrc"
+alias csh="~/dotfiles/config.sh"
 
 # -------
 # pnpm Aliases
