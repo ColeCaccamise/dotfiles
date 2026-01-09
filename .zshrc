@@ -62,6 +62,8 @@ alias dc='docker compose'
 alias dcu='docker compose up'
 alias dcd='docker compose down'
 alias dcud='docker compose up -d'
+alias ds='docker sandbox'
+alias dsls='docker sandbox ls'
 alias dcs='docker sandbox run --template ghcr.io/byga-net/custom-docker-sandbox:latest claude'
 
 # ----------------------
