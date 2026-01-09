@@ -25,6 +25,7 @@ alias ghost="gs" # replace ghostscript command so git status works properly
 alias lint="npx next lint"
 alias ng="ngrok http --url=caccamedia.ngrok.dev"
 alias c="clear"
+alias lg="lazygit" 
 
 # -------
 # pnpm Aliases
@@ -59,6 +60,7 @@ alias dc='docker compose'
 alias dcu='docker compose up'
 alias dcd='docker compose down'
 alias dcud='docker compose up -d'
+alias dcs='docker sandbox run --template ghcr.io/byga-net/custom-docker-sandbox:latest claude'
 
 # ----------------------
 # Rails Aliases
@@ -94,12 +96,9 @@ alias ls='eza --git --group-directories-first --icons'
 alias l='eza --git --group-directories-first --icons'
 alias ll='eza --git --group-directories-first --icons -alF'
 alias la='eza --git --group-directories-first --icons -a'
-alias lt='eza --git --group-directories-first --icons -T'
-alias ltl='eza --git --group-directories-first --icons -TL'
 
 # ----------------------
 # Stripe Aliases
 # ----------------------
 alias sl='stripe login'
 alias slf='stripe listen --forward-to'
-
