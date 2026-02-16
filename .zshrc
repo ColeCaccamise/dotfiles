@@ -41,6 +41,13 @@ alias pr="pnpm run"
 alias psd="pnpm start:dev"
 
 # ----------------------
+# bun Aliases
+# ----------------------
+alias b="bun"
+alias bi="bun install"
+alias bd="bun dev"
+
+# ----------------------
 # Git Aliases
 # ----------------------
 alias gi='git init'
