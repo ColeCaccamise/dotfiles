@@ -45,6 +45,7 @@ alias psd="pnpm start:dev"
 # ----------------------
 alias b="bun"
 alias bi="bun install"
+alias ba="bun add"
 alias bd="bun dev"
 
 # ----------------------
