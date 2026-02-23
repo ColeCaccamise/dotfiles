@@ -15,6 +15,9 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='code -w'
 export TERM=xterm-256color
 
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # -------
 # Aliases
 # -------
@@ -47,6 +50,8 @@ alias b="bun"
 alias bi="bun install"
 alias ba="bun add"
 alias bd="bun dev"
+alias bm="bun run migrate"
+alias bmm="bun run migrate:make"
 
 # ----------------------
 # Git Aliases

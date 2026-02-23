@@ -2,7 +2,6 @@
 
 DOTFILES=(.gitconfig .zshrc)
 
-for dotfile in $(echo ${DOTFILES[*]});
-do
-    cp ~/dotfiles/$(echo $dotfile) ~/$(echo $dotfile)
+for dotfile in "${DOTFILES[@]}"; do
+    ln -sf ~/dotfiles/"$dotfile" ~/"$dotfile"
 done
