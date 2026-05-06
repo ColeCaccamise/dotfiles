@@ -2,9 +2,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME=""
 
-autoload -U promptinit; promptinit
-prompt pure
-
 CASE_SENSITIVE="true"
 # ENABLE_CORRECTION="true"
 
@@ -12,11 +9,15 @@ plugins=(git docker)
 
 source $ZSH/oh-my-zsh.sh
 
+fpath+=("$HOME/.bun/install/global/node_modules/pure-prompt")
+source "$HOME/.bun/install/global/node_modules/pure-prompt/async.zsh"
+source "$HOME/.bun/install/global/node_modules/pure-prompt/pure.zsh"
+
 export EDITOR='code -w'
 export TERM=xterm-256color
 
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.local/bin:$BUN_INSTALL/bin:$PATH"
 
 # -------
 # Aliases
@@ -52,6 +53,7 @@ alias ba="bun add"
 alias bd="bun dev"
 alias bm="bun run migrate"
 alias bmm="bun run migrate:make"
+alias brz="bun run zrok"
 
 # ----------------------
 # Git Aliases
@@ -87,6 +89,8 @@ alias rdm='rake db:migrate'
 alias rdb='rake db:rollback'
 alias bi='bundle install'
 alias rrg='rake routes | grep'
+alias ber='bundle exec rake'
+alias rmc='./remote -c'
 
 # ----------------------
 # Vercel Aliases
@@ -115,7 +119,16 @@ alias ll='eza --git --group-directories-first --icons -alF'
 alias la='eza --git --group-directories-first --icons -a'
 
 # ----------------------
+# Skip-Worktree Aliases
+# Files with skip-worktree set will not show changes in git by default
+# ----------------------
+alias gskip='git ls-files -v | grep "^S"' # List all files currently skipped on the worktree
+alias gskipa='git update-index --skip-worktree' # Add a file to the skip-worktree list (e.g. gskipa .env)
+alias gskipr='git update-index --no-skip-worktree' # Remove a file from the skip-worktree list (e.g. gskipr .env)
+
+# ----------------------
 # Stripe Aliases
 # ----------------------
 alias sl='stripe login'
 alias slf='stripe listen --forward-to'
+export PATH="$HOME/.diversion/bin:$PATH"
