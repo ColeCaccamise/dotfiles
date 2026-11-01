@@ -32,6 +32,7 @@ alias c="clear"
 alias lg="lazygit" 
 alias sz="source ~/.zshrc"
 alias csh="~/dotfiles/config.sh"
+alias trc="cd ~/Developer/theredactedcorporation"
 
 # -------
 # pnpm Aliases
